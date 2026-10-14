@@ -8,8 +8,8 @@
       <stop offset="1" stop-color="#081d29"/>
     </linearGradient>
     <radialGradient id="glow" cx="78%" cy="24%" r="68%">
-      <stop offset="0" stop-color="#64e8ff" stop-opacity=".34"/>
-      <stop offset=".4" stop-color="#9b6cff" stop-opacity=".12"/>
+      <stop offset="0" stop-color="#b8f3e2" stop-opacity=".3"/>
+      <stop offset=".4" stop-color="#d8c4ff" stop-opacity=".14"/>
       <stop offset="1" stop-color="#000" stop-opacity="0"/>
     </radialGradient>
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
@@ -27,16 +27,16 @@
   <rect width="1280" height="640" fill="url(#glow)"/>
   <rect width="1280" height="640" fill="url(#grid)"/>
 
-  <circle cx="1060" cy="116" r="115" fill="#8f6cff" opacity=".14" filter="url(#soft)"/>
-  <circle cx="1110" cy="500" r="135" fill="#47e6ff" opacity=".1" filter="url(#soft)"/>
+  <circle cx="1060" cy="116" r="115" fill="#d8c4ff" opacity=".14" filter="url(#soft)"/>
+  <circle cx="1110" cy="500" r="135" fill="#b8f3e2" opacity=".1" filter="url(#soft)"/>
 
   <g transform="translate(84 100)">
-    <text x="0" y="26" fill="#6ee7ff" font-family="monospace" font-size="18" font-weight="700" letter-spacing="4">VISUAL QA / 01</text>
+    <text x="0" y="26" fill="#b8f3e2" font-family="monospace" font-size="18" font-weight="700" letter-spacing="4">VISUAL QA / 01</text>
     <text x="0" y="146" fill="#f5f7ff" font-family="Arial, Helvetica, sans-serif" font-size="104" font-weight="800" letter-spacing="-5">Oh I See</text>
     <text x="5" y="196" fill="#bfc7e8" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing=".4">Evidence-backed visual regression audits.</text>
-    <rect x="4" y="244" width="74" height="5" rx="2.5" fill="#6ee7ff"/>
-    <rect x="88" y="244" width="34" height="5" rx="2.5" fill="#a273ff"/>
-    <rect x="132" y="244" width="14" height="5" rx="2.5" fill="#f5d76e"/>
+    <rect x="4" y="244" width="74" height="5" rx="2.5" fill="#b8f3e2"/>
+    <rect x="88" y="244" width="34" height="5" rx="2.5" fill="#d8c4ff"/>
+    <rect x="132" y="244" width="14" height="5" rx="2.5" fill="#ffd1ba"/>
   </g>
 
   <g transform="translate(638 94)" filter="url(#shadow)">
@@ -52,35 +52,35 @@
     <text x="54" y="103" fill="#9da8d1" font-family="monospace" font-size="10">VIEWPORT MATRIX</text>
 
     <g transform="translate(54 124)">
-      <rect width="246" height="164" rx="7" fill="#0b0e1a" stroke="#6ee7ff" stroke-width="2"/>
+        <rect width="246" height="164" rx="7" fill="#0b0e1a" stroke="#b8f3e2" stroke-width="2"/>
       <rect x="14" y="14" width="218" height="22" rx="4" fill="#252c49"/>
       <rect x="14" y="52" width="142" height="8" rx="4" fill="#e8ebff"/>
       <rect x="14" y="70" width="180" height="6" rx="3" fill="#6f789c"/>
       <rect x="14" y="96" width="218" height="38" rx="5" fill="#1b2140" stroke="#303855"/>
-      <text x="14" y="153" fill="#6ee7ff" font-family="monospace" font-size="10">1440 × 900  /  PASS</text>
+      <text x="14" y="153" fill="#b8f3e2" font-family="monospace" font-size="10">1440 × 900  /  PASS</text>
     </g>
 
     <g transform="translate(322 124)">
-      <rect width="86" height="164" rx="8" fill="#0b0e1a" stroke="#a273ff" stroke-width="2"/>
+      <rect width="86" height="164" rx="8" fill="#0b0e1a" stroke="#d8c4ff" stroke-width="2"/>
       <rect x="10" y="14" width="66" height="18" rx="4" fill="#252c49"/>
       <rect x="10" y="48" width="66" height="6" rx="3" fill="#e8ebff"/>
       <rect x="10" y="62" width="50" height="5" rx="2.5" fill="#6f789c"/>
       <rect x="10" y="82" width="66" height="45" rx="5" fill="#1b2140" stroke="#303855"/>
-      <text x="10" y="148" fill="#a273ff" font-family="monospace" font-size="9">768  PASS</text>
+      <text x="10" y="148" fill="#d8c4ff" font-family="monospace" font-size="9">768  PASS</text>
     </g>
 
     <g transform="translate(422 124)">
-      <rect width="50" height="164" rx="8" fill="#0b0e1a" stroke="#f5d76e" stroke-width="2"/>
+      <rect width="50" height="164" rx="8" fill="#0b0e1a" stroke="#ffd1ba" stroke-width="2"/>
       <rect x="7" y="14" width="36" height="18" rx="3" fill="#252c49"/>
       <rect x="7" y="48" width="36" height="5" rx="2.5" fill="#e8ebff"/>
       <rect x="7" y="62" width="27" height="4" rx="2" fill="#6f789c"/>
       <rect x="7" y="80" width="36" height="50" rx="4" fill="#1b2140" stroke="#303855"/>
-      <text x="7" y="148" fill="#f5d76e" font-family="monospace" font-size="8">390</text>
+      <text x="7" y="148" fill="#ffd1ba" font-family="monospace" font-size="8">390</text>
     </g>
   </g>
 
   <g transform="translate(638 526)">
-    <circle cx="0" cy="0" r="5" fill="#6ee7ff"/>
+    <circle cx="0" cy="0" r="5" fill="#b8f3e2"/>
     <text x="17" y="5" fill="#9da8d1" font-family="monospace" font-size="13">DESKTOP  •  TABLET  •  MOBILE</text>
   </g>
 
