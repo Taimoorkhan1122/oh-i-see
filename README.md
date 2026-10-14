@@ -52,7 +52,7 @@ The directory name and the `name` field in `SKILL.md` are the same string. The [
 Agents that read skills from a repository can use the repository URL instead:
 
 ```bash
-npx skills add <owner>/oh-i-see
+npx skills add Taimoorkhan1122/oh-i-see
 ```
 
 ### Verify the install

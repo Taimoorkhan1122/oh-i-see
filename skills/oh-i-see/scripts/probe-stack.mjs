@@ -14,7 +14,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { execSync } from 'node:child_process';
+import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { findBrowserBuilds } from './lib/browser-cache.mjs';
 
@@ -22,10 +22,23 @@ const args = process.argv.slice(2);
 const flag = (n, d) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : d; };
 const cwd = path.resolve(flag('--cwd', process.cwd()));
 const port = flag('--port', '8080');
+if (!/^\d+$/.test(port) || Number(port) < 1 || Number(port) > 65535) {
+  throw new Error(`Invalid port: ${port}. Expected a number from 1 to 65535.`);
+}
 const asJson = args.includes('--json');
 
 const r = {};
-const sh = (cmd, dir = cwd) => { try { return execSync(cmd, { cwd: dir, stdio: ['ignore', 'pipe', 'ignore'], timeout: 20000 }).toString().trim(); } catch { return null; } };
+const run = (command, args, dir = cwd) => {
+  try {
+    return execFileSync(command, args, {
+      cwd: dir,
+      stdio: ['ignore', 'pipe', 'ignore'],
+      timeout: 20000,
+    }).toString().trim();
+  } catch {
+    return null;
+  }
+};
 const has = (f) => fs.existsSync(path.join(cwd, f));
 
 // ── 1. framework ──────────────────────────────────────────────────────────
@@ -41,9 +54,9 @@ r.devServer = {
   reachable: null,
   url: `http://localhost:${port}`,
 };
-r.devServer.reachable = !!sh(`curl -s -o /dev/null -w '%{http_code}' --max-time 4 http://localhost:${port}/`);
+r.devServer.reachable = !!run('curl', ['-s', '-o', '/dev/null', '-w', '%{http_code}', '--max-time', '4', `http://localhost:${port}/`]);
 if (!r.devServer.reachable) {
-  const pm = sh('node -e "const p=require(\'./package.json\');console.log((p.scripts||{}).dev||\'\')"');
+  const pm = run('node', ['-e', "const p=require('./package.json');console.log((p.scripts||{}).dev||'')"]);
   r.devServer.startCommand = pm || null;
 }
 
@@ -86,8 +99,8 @@ if (!r.api.host) {
 }
 
 if (r.api.host) {
-  r.api.status = sh(`curl -s -o /dev/null -w '%{http_code}' --max-time 8 "https://${r.api.host}/"`) || '000';
-  r.api.resolves = !!sh(`dig +short +time=3 +tries=1 @1.1.1.1 ${r.api.host} | head -1`);
+  r.api.status = run('curl', ['-s', '-o', '/dev/null', '-w', '%{http_code}', '--max-time', '8', `https://${r.api.host}/`]) || '000';
+  r.api.resolves = !!run('dig', ['+short', '+time=3', '+tries=1', '@1.1.1.1', r.api.host]);
   if (!r.api.resolves) {
     r.api.reachable = false;
     r.api.ladder = 3;
@@ -110,7 +123,7 @@ r.playwright = { installed: false, version: null, browsers: [], from: null };
 // documented install, where the skill carries its own dependency.
 const SKILL_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 for (const from of [cwd, SKILL_ROOT]) {
-  const v = sh(`node -e "console.log(require('playwright/package.json').version)"`, from);
+  const v = run('node', ['-e', "console.log(require('playwright/package.json').version)"], from);
   if (v) { r.playwright = { installed: true, version: v, browsers: [], from: from === cwd ? 'the audited repo' : 'the skill' }; break; }
 }
 r.playwright.browsers = findBrowserBuilds();
@@ -126,7 +139,7 @@ const candidates = probe
   : ['docs/oh-i-see', 'reports/ui-audit', 'tmp/visual-audit', '.audit', 'docs/audit'];
 
 for (const candidate of candidates) {
-  const out = sh(`git check-ignore -v "${candidate}/probe-canary.txt"`);
+  const out = run('git', ['check-ignore', '-v', `${candidate}/probe-canary.txt`]);
   if (out) {
     const parts = out.split(':');
     r.writeZone = { path: candidate, ignored: true, how: parts[0].trim(), via: parts.slice(1, -1).join(':').trim() };

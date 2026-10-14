@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "description": "Agent skill: evidence-backed visual regression audits of web apps. Drives Playwright over user journeys, screenshots every state at every breakpoint, measures contrast/focus/tap-targets/overflow, and emits findings where every claim carries an openable screenshot and a recomputable number.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Taimoorkhan1122/oh-i-see.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Taimoorkhan1122/oh-i-see/issues"
+  },
+  "homepage": "https://github.com/Taimoorkhan1122/oh-i-see#readme",
   "type": "module",
   "private": false,
   "engines": {
