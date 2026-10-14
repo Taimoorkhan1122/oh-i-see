@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
   <title id="title">Oh I See — evidence-backed visual regression audits</title>
-  <desc id="desc">A dark visual forensics banner with a measured browser frame, focus ring, and diagnostic annotations.</desc>
+  <desc id="desc">A dark visual forensics banner with precise inspection marks and an abstract lens motif.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#111321"/>
@@ -39,29 +39,18 @@
     <rect x="132" y="244" width="14" height="5" rx="2.5" fill="#f5d76e"/>
   </g>
 
-  <g transform="translate(664 92)" filter="url(#shadow)">
-    <rect width="510" height="398" rx="18" fill="#0c0f1d" stroke="#8d9acb" stroke-opacity=".5"/>
-    <rect x="1" y="1" width="508" height="42" rx="17" fill="#20243a"/>
-    <circle cx="25" cy="22" r="6" fill="#ff6d83"/>
-    <circle cx="45" cy="22" r="6" fill="#f5d76e"/>
-    <circle cx="65" cy="22" r="6" fill="#64e8ff"/>
-    <rect x="102" y="14" width="282" height="16" rx="8" fill="#0f1221" stroke="#707ba6" stroke-opacity=".4"/>
-    <text x="116" y="26" fill="#8993b8" font-family="monospace" font-size="9">localhost:5173 / signup / invalid</text>
-
-    <rect x="34" y="78" width="442" height="278" rx="10" fill="#14182a"/>
-    <rect x="58" y="104" width="164" height="12" rx="6" fill="#e8ebff"/>
-    <rect x="58" y="126" width="218" height="8" rx="4" fill="#6f789c"/>
-    <rect x="58" y="170" width="394" height="43" rx="7" fill="#0b0e1a" stroke="#303855"/>
-    <rect x="58" y="234" width="394" height="43" rx="7" fill="#0b0e1a" stroke="#6ee7ff" stroke-width="2"/>
-    <rect x="74" y="247" width="150" height="17" rx="4" fill="#2a3150"/>
-    <rect x="58" y="298" width="148" height="35" rx="17" fill="#8f6cff"/>
-    <text x="95" y="321" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Continue</text>
-
-    <rect x="300" y="164" width="156" height="34" rx="6" fill="#101525" stroke="#6ee7ff" stroke-opacity=".8"/>
-    <text x="312" y="185" fill="#6ee7ff" font-family="monospace" font-size="10">focus: 2.0px ring</text>
+  <g transform="translate(892 298)">
+    <circle r="160" fill="#0c1020" fill-opacity=".58" stroke="#7d8ac0" stroke-opacity=".3"/>
+    <circle r="118" fill="none" stroke="#6ee7ff" stroke-width="2" stroke-dasharray="2 16" opacity=".8"/>
+    <circle r="76" fill="none" stroke="#a273ff" stroke-width="18" stroke-opacity=".72"/>
+    <circle r="43" fill="#64e8ff" fill-opacity=".16" stroke="#d8fbff" stroke-width="2"/>
+    <circle r="10" fill="#f5f7ff"/>
+    <path d="M-212 0H-148 M148 0H212 M0-212V-148 M0 148V212" stroke="#6ee7ff" stroke-width="2"/>
+    <path d="M-178-178L-134-134 M178-178L134-134 M-178 178L-134 134 M178 178L134 134" stroke="#a273ff" stroke-width="2"/>
+    <text x="-92" y="252" fill="#9da8d1" font-family="monospace" font-size="13" letter-spacing="2">INSPECT / REPEAT</text>
   </g>
 
-  <g transform="translate(700 536)">
+  <g transform="translate(84 536)">
     <circle cx="0" cy="0" r="5" fill="#6ee7ff"/>
     <text x="17" y="5" fill="#9da8d1" font-family="monospace" font-size="13">SCREENSHOT  •  MEASURE  •  VERIFY</text>
   </g>
