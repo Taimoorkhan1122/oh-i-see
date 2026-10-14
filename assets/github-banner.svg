@@ -57,7 +57,6 @@
     <rect x="58" y="298" width="148" height="35" rx="17" fill="#8f6cff"/>
     <text x="95" y="321" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Continue</text>
 
-    <path d="M450 218 L420 276 L444 269 L457 296 L469 290 L456 263 L480 257 Z" fill="#fff" stroke="#111321" stroke-width="4"/>
     <rect x="300" y="164" width="156" height="34" rx="6" fill="#101525" stroke="#6ee7ff" stroke-opacity=".8"/>
     <text x="312" y="185" fill="#6ee7ff" font-family="monospace" font-size="10">focus: 2.0px ring</text>
   </g>
