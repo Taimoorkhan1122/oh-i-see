@@ -40,41 +40,41 @@
   </g>
 
   <g transform="translate(638 94)" filter="url(#shadow)">
-    <rect width="536" height="394" rx="18" fill="#0c0f1d" stroke="#8d9acb" stroke-opacity=".5"/>
-    <rect x="1" y="1" width="534" height="42" rx="17" fill="#20243a"/>
-    <circle cx="25" cy="22" r="6" fill="#ff6d83"/>
-    <circle cx="45" cy="22" r="6" fill="#f5d76e"/>
-    <circle cx="65" cy="22" r="6" fill="#64e8ff"/>
-    <rect x="102" y="14" width="300" height="16" rx="8" fill="#0f1221" stroke="#707ba6" stroke-opacity=".4"/>
-    <text x="116" y="26" fill="#8993b8" font-family="monospace" font-size="9">oh-i-see / responsive sweep</text>
+    <rect width="536" height="394" rx="18" fill="#f7f8fc" stroke="#d7dbea" stroke-width="2"/>
+    <rect x="1" y="1" width="534" height="42" rx="17" fill="#e8eaf2"/>
+    <circle cx="25" cy="22" r="6" fill="#ff8f9f"/>
+    <circle cx="45" cy="22" r="6" fill="#f2c96d"/>
+    <circle cx="65" cy="22" r="6" fill="#92d9c5"/>
+    <rect x="102" y="14" width="300" height="16" rx="8" fill="#fff" stroke="#c8ccdc"/>
+    <text x="116" y="26" fill="#7a8098" font-family="monospace" font-size="9">oh-i-see / responsive sweep</text>
 
-    <rect x="32" y="76" width="472" height="268" rx="10" fill="#14182a"/>
-    <text x="54" y="103" fill="#9da8d1" font-family="monospace" font-size="10">VIEWPORT MATRIX</text>
+    <rect x="32" y="76" width="472" height="268" rx="10" fill="#fff" stroke="#e1e3ec"/>
+    <text x="54" y="103" fill="#66708c" font-family="monospace" font-size="10">VIEWPORT MATRIX</text>
 
     <g transform="translate(54 124)">
-        <rect width="246" height="164" rx="7" fill="#0b0e1a" stroke="#b8f3e2" stroke-width="2"/>
-      <rect x="14" y="14" width="218" height="22" rx="4" fill="#252c49"/>
-      <rect x="14" y="52" width="142" height="8" rx="4" fill="#e8ebff"/>
-      <rect x="14" y="70" width="180" height="6" rx="3" fill="#6f789c"/>
-      <rect x="14" y="96" width="218" height="38" rx="5" fill="#1b2140" stroke="#303855"/>
+        <rect width="246" height="164" rx="7" fill="#fbfcff" stroke="#9bdcca" stroke-width="2"/>
+        <rect x="14" y="14" width="218" height="22" rx="4" fill="#e9edf7"/>
+        <rect x="14" y="52" width="142" height="8" rx="4" fill="#3d4662"/>
+        <rect x="14" y="70" width="180" height="6" rx="3" fill="#8991a8"/>
+        <rect x="14" y="96" width="218" height="38" rx="5" fill="#eef1fb" stroke="#d8ddec"/>
       <text x="14" y="153" fill="#b8f3e2" font-family="monospace" font-size="10">1440 × 900  /  PASS</text>
     </g>
 
     <g transform="translate(322 124)">
-      <rect width="86" height="164" rx="8" fill="#0b0e1a" stroke="#d8c4ff" stroke-width="2"/>
-      <rect x="10" y="14" width="66" height="18" rx="4" fill="#252c49"/>
-      <rect x="10" y="48" width="66" height="6" rx="3" fill="#e8ebff"/>
-      <rect x="10" y="62" width="50" height="5" rx="2.5" fill="#6f789c"/>
-      <rect x="10" y="82" width="66" height="45" rx="5" fill="#1b2140" stroke="#303855"/>
+      <rect width="86" height="164" rx="8" fill="#fbfcff" stroke="#c8b2f2" stroke-width="2"/>
+      <rect x="10" y="14" width="66" height="18" rx="4" fill="#e9edf7"/>
+      <rect x="10" y="48" width="66" height="6" rx="3" fill="#3d4662"/>
+      <rect x="10" y="62" width="50" height="5" rx="2.5" fill="#8991a8"/>
+      <rect x="10" y="82" width="66" height="45" rx="5" fill="#eef1fb" stroke="#d8ddec"/>
       <text x="10" y="148" fill="#d8c4ff" font-family="monospace" font-size="9">768  PASS</text>
     </g>
 
     <g transform="translate(422 124)">
-      <rect width="50" height="164" rx="8" fill="#0b0e1a" stroke="#ffd1ba" stroke-width="2"/>
-      <rect x="7" y="14" width="36" height="18" rx="3" fill="#252c49"/>
-      <rect x="7" y="48" width="36" height="5" rx="2.5" fill="#e8ebff"/>
-      <rect x="7" y="62" width="27" height="4" rx="2" fill="#6f789c"/>
-      <rect x="7" y="80" width="36" height="50" rx="4" fill="#1b2140" stroke="#303855"/>
+      <rect width="50" height="164" rx="8" fill="#fbfcff" stroke="#f2bda4" stroke-width="2"/>
+      <rect x="7" y="14" width="36" height="18" rx="3" fill="#e9edf7"/>
+      <rect x="7" y="48" width="36" height="5" rx="2.5" fill="#3d4662"/>
+      <rect x="7" y="62" width="27" height="4" rx="2" fill="#8991a8"/>
+      <rect x="7" y="80" width="36" height="50" rx="4" fill="#eef1fb" stroke="#d8ddec"/>
       <text x="7" y="148" fill="#ffd1ba" font-family="monospace" font-size="8">390</text>
     </g>
   </g>
