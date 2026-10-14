@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
   <title id="title">Oh I See — evidence-backed visual regression audits</title>
-  <desc id="desc">A dark visual forensics banner with precise inspection marks and an abstract lens motif.</desc>
+  <desc id="desc">A dark visual forensics banner with a browser window comparing desktop, tablet, and mobile responsive viewports.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#111321"/>
@@ -39,20 +39,49 @@
     <rect x="132" y="244" width="14" height="5" rx="2.5" fill="#f5d76e"/>
   </g>
 
-  <g transform="translate(892 298)">
-    <circle r="160" fill="#0c1020" fill-opacity=".58" stroke="#7d8ac0" stroke-opacity=".3"/>
-    <circle r="118" fill="none" stroke="#6ee7ff" stroke-width="2" stroke-dasharray="2 16" opacity=".8"/>
-    <circle r="76" fill="none" stroke="#a273ff" stroke-width="18" stroke-opacity=".72"/>
-    <circle r="43" fill="#64e8ff" fill-opacity=".16" stroke="#d8fbff" stroke-width="2"/>
-    <circle r="10" fill="#f5f7ff"/>
-    <path d="M-212 0H-148 M148 0H212 M0-212V-148 M0 148V212" stroke="#6ee7ff" stroke-width="2"/>
-    <path d="M-178-178L-134-134 M178-178L134-134 M-178 178L-134 134 M178 178L134 134" stroke="#a273ff" stroke-width="2"/>
-    <text x="-92" y="252" fill="#9da8d1" font-family="monospace" font-size="13" letter-spacing="2">INSPECT / REPEAT</text>
+  <g transform="translate(638 94)" filter="url(#shadow)">
+    <rect width="536" height="394" rx="18" fill="#0c0f1d" stroke="#8d9acb" stroke-opacity=".5"/>
+    <rect x="1" y="1" width="534" height="42" rx="17" fill="#20243a"/>
+    <circle cx="25" cy="22" r="6" fill="#ff6d83"/>
+    <circle cx="45" cy="22" r="6" fill="#f5d76e"/>
+    <circle cx="65" cy="22" r="6" fill="#64e8ff"/>
+    <rect x="102" y="14" width="300" height="16" rx="8" fill="#0f1221" stroke="#707ba6" stroke-opacity=".4"/>
+    <text x="116" y="26" fill="#8993b8" font-family="monospace" font-size="9">oh-i-see / responsive sweep</text>
+
+    <rect x="32" y="76" width="472" height="268" rx="10" fill="#14182a"/>
+    <text x="54" y="103" fill="#9da8d1" font-family="monospace" font-size="10">VIEWPORT MATRIX</text>
+
+    <g transform="translate(54 124)">
+      <rect width="246" height="164" rx="7" fill="#0b0e1a" stroke="#6ee7ff" stroke-width="2"/>
+      <rect x="14" y="14" width="218" height="22" rx="4" fill="#252c49"/>
+      <rect x="14" y="52" width="142" height="8" rx="4" fill="#e8ebff"/>
+      <rect x="14" y="70" width="180" height="6" rx="3" fill="#6f789c"/>
+      <rect x="14" y="96" width="218" height="38" rx="5" fill="#1b2140" stroke="#303855"/>
+      <text x="14" y="153" fill="#6ee7ff" font-family="monospace" font-size="10">1440 × 900  /  PASS</text>
+    </g>
+
+    <g transform="translate(322 124)">
+      <rect width="86" height="164" rx="8" fill="#0b0e1a" stroke="#a273ff" stroke-width="2"/>
+      <rect x="10" y="14" width="66" height="18" rx="4" fill="#252c49"/>
+      <rect x="10" y="48" width="66" height="6" rx="3" fill="#e8ebff"/>
+      <rect x="10" y="62" width="50" height="5" rx="2.5" fill="#6f789c"/>
+      <rect x="10" y="82" width="66" height="45" rx="5" fill="#1b2140" stroke="#303855"/>
+      <text x="10" y="148" fill="#a273ff" font-family="monospace" font-size="9">768  PASS</text>
+    </g>
+
+    <g transform="translate(422 124)">
+      <rect width="50" height="164" rx="8" fill="#0b0e1a" stroke="#f5d76e" stroke-width="2"/>
+      <rect x="7" y="14" width="36" height="18" rx="3" fill="#252c49"/>
+      <rect x="7" y="48" width="36" height="5" rx="2.5" fill="#e8ebff"/>
+      <rect x="7" y="62" width="27" height="4" rx="2" fill="#6f789c"/>
+      <rect x="7" y="80" width="36" height="50" rx="4" fill="#1b2140" stroke="#303855"/>
+      <text x="7" y="148" fill="#f5d76e" font-family="monospace" font-size="8">390</text>
+    </g>
   </g>
 
-  <g transform="translate(84 536)">
+  <g transform="translate(638 526)">
     <circle cx="0" cy="0" r="5" fill="#6ee7ff"/>
-    <text x="17" y="5" fill="#9da8d1" font-family="monospace" font-size="13">SCREENSHOT  •  MEASURE  •  VERIFY</text>
+    <text x="17" y="5" fill="#9da8d1" font-family="monospace" font-size="13">DESKTOP  •  TABLET  •  MOBILE</text>
   </g>
 
   <text x="1194" y="606" text-anchor="end" fill="#7f8ab1" font-family="monospace" font-size="12" letter-spacing="2">OH-I-SEE / 2026</text>
