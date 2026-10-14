@@ -1,5 +1,7 @@
 # oh-i-see
 
+![Oh I See responsive visual regression audit banner](assets/github-banner.png)
+
 An agent skill. It audits the user interface of a web application.
 
 The skill drives a browser with Playwright. It walks the journeys that a user takes. It captures a screenshot of each state at each breakpoint. It measures contrast, focus rings, tap targets, overflow, and typography. It writes a report.
