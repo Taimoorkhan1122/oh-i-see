@@ -1,0 +1,52 @@
+{
+  "skill_name": "oh-i-see",
+  "notes": "Test prompts for the skill. Assertions are deliberately not written yet — they get drafted while the first run is in flight. Read references/schemas.md for the full shape.",
+  "evals": [
+    {
+      "id": 1,
+      "name": "auth-surface-audit",
+      "prompt": "can you do a UI pass on our signup + login pages? i want to know if anything looks off, especially on mobile. app is running on localhost:8080",
+      "expected_output": "Runs probe-stack, scaffolds a write zone, defines flows for the auth surface including deliberate error states, smoke-tests, captures, produces evidence-backed findings with severity and evidence paths, and reports synthetic-data caveats if the backend is unreachable.",
+      "files": [],
+      "assertions": [
+        "Runs scripts/probe-stack.mjs before dispatching any worker",
+        "Reports the API ladder verdict (real / bypass / emulated) explicitly",
+        "Includes an error state in the flow spec, not just the empty form",
+        "Every finding carries an evidence path that exists on disk",
+        "Every finding carries either a measurement or a sourceHint",
+        "States plainly if backend data is synthetic",
+        "Does not modify any file outside the git-ignored write zone",
+        "Final answer includes a count of findings by severity and the coverage totals"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "multi-flow-sweep-with-priorities",
+      "prompt": "I want a full visual regression across the main app before we ship v2 — maybe 8 or 10 of the main journeys. what should we actually fix first?",
+      "expected_output": "Fans out one worker per flow, then clusters findings into root causes and leads with the tier-1 items where one change clears many findings, rather than listing findings in severity order.",
+      "files": [],
+      "assertions": [
+        "Fans out per flow rather than auditing everything in one context",
+        "Runs a smoke test before fanning out",
+        "Clusters findings into root causes with counts",
+        "Leads the report with a small number of one-line fixes that clear the most findings",
+        "Names a source file or line for at least the top causes",
+        "Includes a 'what looks right' section",
+        "Gives the exact re-run command"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "false-p0-trap",
+      "prompt": "run the visual audit on the library / decks area. i expect there's a broken route in there somewhere",
+      "expected_output": "Discovers the route fails because a declared dependency is absent from node_modules, and reports it as an environment limitation rather than a product P0.",
+      "files": [],
+      "assertions": [
+        "Checks whether the cause is a declared-but-uninstalled dependency before calling it a defect",
+        "Does not file the environment fault as P0 or P1",
+        "Records the fault in a limitations section, not the severity table",
+        "States the exact command to fix it and re-run"
+      ]
+    }
+  ]
+}

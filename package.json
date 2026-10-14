@@ -1,0 +1,37 @@
+{
+  "name": "oh-i-see",
+  "version": "1.0.0",
+  "description": "Agent skill: evidence-backed visual regression audits of web apps. Drives Playwright over user journeys, screenshots every state at every breakpoint, measures contrast/focus/tap-targets/overflow, and emits findings where every claim carries an openable screenshot and a recomputable number.",
+  "license": "MIT",
+  "type": "module",
+  "private": false,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "visual-regression",
+    "ui-audit",
+    "accessibility",
+    "playwright",
+    "design-qa",
+    "agent-skill"
+  ],
+  "files": [
+    "skills/oh-i-see/SKILL.md",
+    "skills/oh-i-see/scripts/",
+    "skills/oh-i-see/references/",
+    "skills/oh-i-see/assets/",
+    "skills/oh-i-see/evals/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "postinstall": "node skills/oh-i-see/scripts/lib/check-browser.mjs",
+    "probe": "node skills/oh-i-see/scripts/probe-stack.mjs",
+    "validate:skill": "skills-ref validate ./skills/oh-i-see",
+    "test": "node test/run-tests.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.64.1"
+  }
+}

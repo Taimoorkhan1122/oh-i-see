@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+
+# build / pack output
+dist/
+*.tgz
+
+# env
+.env
+.env.*
+!.env.example
+
+# audit write zones — these are run output, never source.
+# The skill asks for a git-ignored zone on purpose; this covers the case where
+# someone runs an audit inside this repo.
+docs/oh-i-see/
+reports/ui-audit/
+tmp/visual-audit/
+.audit/
+evidence/
+findings/
+clusters.mjs
+
+# editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp

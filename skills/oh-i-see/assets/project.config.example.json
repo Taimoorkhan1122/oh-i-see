@@ -1,0 +1,46 @@
+{
+  "name": "my-app",
+  "repo": "/absolute/path/to/your/repo",
+  "baseUrl": "http://localhost:3000",
+
+  "devServer": { "command": "npm run dev", "readyPath": "/login", "timeoutSec": 60 },
+
+  "writeZone": "docs/oh-i-see",
+  "writeZoneNote": " — confirmed git-ignored via .git/info/exclude",
+
+  "auditPaths": ["src/", "app/", "tests/", "public/"],
+
+  "api": {
+    "kind": "supabase",
+    "host": "<project-ref>.supabase.co",
+    "storageKey": "sb-<project-ref>-auth-token",
+    "reachable": false
+  },
+
+  "canon": {
+    "fonts": { "display": "Spectral", "body": "Inter" },
+    "colors": {
+      "accent": "#B3532E",
+      "background": "#12141A",
+      "paper": "#F6F5F2",
+      "mutedText": "#A7AEB8"
+    },
+    "forbidden": ["purple", "generic SaaS blue", "pure #000000"],
+    "ctaLabel": "Get started"
+  },
+
+  "viewports": [
+    { "name": "desktop", "width": 1440, "height": 900 },
+    { "name": "tablet",  "width": 1024, "height": 768 },
+    { "name": "mobile",  "width": 390,  "height": 844, "isMobile": true, "hasTouch": true },
+    { "name": "small",   "width": 320,  "height": 640, "isMobile": true, "hasTouch": true }
+  ],
+
+  "severity": {
+    "P0": "Flow is broken — the user cannot complete it",
+    "P1": "Major defect on a core step of the flow",
+    "P2": "Clearly visible defect: overlap, clipping, unreadable contrast, wrong state",
+    "P3": "Real but minor: one-off spacing, small tap target, drifting font, weak focus ring",
+    "P4": "Polish nit: sub-pixel alignment, a single odd letter-spacing"
+  }
+}
